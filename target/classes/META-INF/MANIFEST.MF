@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1613406821996
+Build-Jdk: 1.8.0_281
+Built-By: Aravind
+Bundle-Blueprint: OSGI-INF/blueprint/my-service.xml
+Bundle-Description: bullet OSGi blueprint bundle project.
+Bundle-ManifestVersion: 2
+Bundle-Name: bullet Blueprint Bundle
+Bundle-SymbolicName: bullet
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: bikes;version="1.0.0.SNAPSHOT"
+Export-Service: bikes.MyService;osgi.service.blueprint.compname=serviceB
+ ean
+Import-Package: org.osgi.service.blueprint;version="[1.0.0,2.0.0)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.6))"
+Tool: Bnd-3.3.0.201609221906
